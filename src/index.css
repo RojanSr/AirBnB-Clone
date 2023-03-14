@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+
+/* Custom Property */
+:root {
+  --bg-clr-main: #ffffff;
+
+  --clr-dark: #000000;
+  --clr-light-dark: #222222;
+  --clr-grey: #918e9b;
+
+  --container-width: 90vw;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  box-shadow: 0px 8px 8px -4px rgba(0, 0, 0, 0.15);
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.airbnb-logo {
+  height: 30px;
+  width: 98px;
+}
+
+.hero {
+  padding-top: 40px;
+}
+
+.hero > h1 {
+  color: var(--clr-dark);
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.hero > p {
+  color: var(--clr-light-dark);
+  font-weight: 300;
+  width: 40vw;
+}
+
+.photo-grid {
+  width: 600px;
+  display: block;
+  margin: auto;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: auto;
+}
+
+.card-container {
+  margin: 40px auto;
+}
+
+.card {
+  max-width: 176px;
+  font-size: 12px;
+  color: var(--clr-light-dark);
+  position: relative;
+}
+
+.card::before {
+  font-size: 10.24px;
+  content: "SOLD OUT";
+  letter-spacing: 0.4px;
+  position: absolute;
+  background-color: var(--bg-clr-main);
+  color: var(--clr-dark);
+  margin: 6px;
+  border-radius: 3px;
+  padding: 4px;
+}
+
+.profile-img {
+  width: 176px;
+  height: 235px;
+  border-radius: 9px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.card--star {
+  width: 14px;
+  height: 14px;
+}
+
+.card--location {
+  color: var(--clr-grey);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 3px;
+}
