@@ -77,7 +77,16 @@ nav {
   position: relative;
 }
 
-.card::before {
+.card--status {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  background-color: #ffffff;
+  padding: 3px 12px;
+  border-radius: 5px;
+}
+
+/* .card::before {
   font-size: 10.24px;
   content: "SOLD OUT";
   letter-spacing: 0.4px;
@@ -87,7 +96,7 @@ nav {
   margin: 6px;
   border-radius: 3px;
   padding: 4px;
-}
+} */
 
 .profile-img {
   width: 176px;
